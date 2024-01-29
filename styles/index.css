@@ -1,0 +1,15 @@
+:root{
+    --header: #52796F;
+    --text: #CAD2C5;
+    --bg: #2F3E46;
+}
+body{
+    background-color: var(--bg);
+    color: var(--text);
+}
+nav{
+    background-color: var(--header);
+}
+a.nav-link{
+    color: var(--text) !important;
+}
