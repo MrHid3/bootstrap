@@ -1,0 +1,6 @@
+[class*="col"] {
+  background-color: bisque;
+  border: 1px solid dimgray;
+  text-align: center;
+  color: black;
+}

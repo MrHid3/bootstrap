@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Breakpointy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar justify-content-center nav-pills">
+      <ul class="nav">
+        <li class="nav-item">
+          <a
+            href="../index.html"
+            class="text-decoration-none text-black nav-link"
+            >Strona główna</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="../Instalacja/index.html"
+            class="text-decoration-none nav-link"
+            >Instalacja</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="text-decoration-none nav-link active"
+            >Breakpointy</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="../Kolory/index.html" class="text-decoration-none nav-link"
+            >Kolory</a
+          >
+        </li>
+        <li class="nav-item dropdown" data-bs-theme="light">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            >Tekst</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Wielkości tekstu</a></li>
+            <li><a class="dropdown-item" href="#">Cienie</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="text-decoration-none nav-link">Display</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="text-decoration-none nav-link">Spacing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="text-decoration-none nav-link">Komponenty</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid w-100 d-flex justify-content-center">
+      <p class="display-1">Breakpointy i proste przydatne klasy</p>
+    </div>
+    <hr />
+    <div class="container d-flex justify-content-space-around">
+      <div class="container w-40%">
+        <p class="display-6 display-lg-7">
+          W bootstrapie jest 6 wbudowanych breakpointów używanych do tworzenia
+          breakpointów:
+        </p>
+      </div>
+      <div class="container w-60%">
+        <img class="w-100" src="../images/breakpoints.png" alt="breakpointy" />
+      </div>
+    </div>
+    <hr />
+    <div class="container d-flex justify-content-space-around">
+      <div class="container w-50%">
+        <p class="display-6">
+          Klasy w których łatwo zaprezentować działanie breakpointów jest klasa
+          "col". Rodzic z klasą "row" dzieli się na max 12 kolumn. Dodajemy
+          klasę pisząc kluczowe "col" i po pauzie dopisując ilość kolumn które
+          nasz div ma zajmować. Przykład podziału na równe części:
+        </p>
+      </div>
+      <div class="container w-50%">
+        <img class="w-100" src="../images/codeCol.png" alt="kodzik" />
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-3">1</div>
+        <div class="col-3">2</div>
+        <div class="col-3">3</div>
+        <div class="col-3">4</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="container d-flex justify-content-space-around">
+      <div class="container w-50%">
+        <p class="display-6">
+          Tutaj przykład innego podziału już z dodaniem breakpointów. Dodajemy
+          je pisząc pomiędzy słowem "col" a wielkością odpowiedni breakpoint dla
+          którego ustawiamy daną wielkość. Jeśli nie podamy żadnego breakpointa
+          to domyślnie będzie ustawiony extra small. Przykładowo:
+        </p>
+      </div>
+      <div class="container w-50%">
+        <img class="w-100" src="../images/codeCol2.png" alt="kodzik" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">1</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">2</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">3</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">4</div>
+      </div>
+    </div>
+    <br /><br />
+  </body>
+</html>
