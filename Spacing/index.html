@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spacing</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar justify-content-center nav-pills">
+      <ul class="nav">
+        <li class="nav-item">
+          <a
+            href="../index.html"
+            class="text-decoration-none text-black nav-link"
+            >Strona główna</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="../Instalacja/index.html"
+            class="text-decoration-none nav-link"
+            >Instalacja</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="text-decoration-none nav-link"
+            >Breakpointy</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="../Kolory/index.html" class="text-decoration-none nav-link"
+            >Kolory</a
+          >
+        </li>
+        <li class="nav-item dropdown" data-bs-theme="light">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            >Tekst</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Wielkości tekstu</a></li>
+            <li><a class="dropdown-item" href="#">Cienie</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="../Display/index.html" class="text-decoration-none nav-link"
+            >Display</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="text-decoration-none nav-link active"
+            >Spacing</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="text-decoration-none nav-link">Komponenty</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid w-100 d-flex justify-content-center">
+      <p class="display-1">Spacing - margin i padding</p>
+    </div>
+    <hr />
+    <div class="container d-flex justify-content-space-around">
+      <div class="container w-50">
+        <p class="display-6 ">
+          Zamiast uzywać styli css marginy i paddingi możemy ustawić odpowiednio
+          klasami "m" i "p". Do tego dopisujemy po których stronach chcemy aby
+          ustawiona właściwość została zastosowana. Dopisujemy jeszcze wartość od 0 do 5 (można samemu nadpisać): 1 - 0.25rem, 2 - 0.5rem, 3 - 1rem, 4 - 1.5rem, 5 - 3rem. Wartości te można nadpisać w stylach css zmieniając wartość zmiennej "$spacer".
+        </p>
+      </div>
+      <div class="container w-50">
+        <p class="display-6 ">
+            <pre class="display-6">
+t - top
+b - bottom
+s - start
+e - end
+x - left i right
+y - top i bottom
+nic - wszystkie 4 strony
+        </pre></p>
+      </div>
+    </div>
+    <br>
+    <hr />
+    <br>
+    <div class="container d-flex justify-content-space-around">
+        <div class="container w-50">
+            <p class="display-6">Ten kod stworzy paragraf, który będzie miał margin-top: 3rem i padding: 1.5rem</p>
+        </div>
+        <div class="container w-50"><img src="../images/codeSpacing1.png" alt="kodzik"></div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container d-flex justify-content-space-around">
+        <div class="container w-30"><p class="display-6">Możemy również ustawić gap na kontenerach które mają display: grid lub flex. Możemy ustawić zwykły gap na wszystkie strony, column-gap czyli przerwa między kolumnami i analogicznie row-gap. Używamy tych samych wartości co w paddingach i marginach.</p></div>
+        <div class="container w-70 d-flex flex-column gap-5">
+          <div class="container w-70">
+            <img class="w-100" src="../images/codeSpacing2.png" alt="kodzik">
+          </div>
+          <div class="d-flex justify-content-center  gap-4">
+            <div class="p-2 text-bg-info">Ga</div>
+            <div class="p-2 text-bg-info">Ga</div>
+            <div class="p-2 text-bg-info">Ga</div>
+            <div class="p-2 text-bg-info">Ga</div>
+          </div>
+        </div>       
+    </div>
+
+    
+  </body>
+</html>
