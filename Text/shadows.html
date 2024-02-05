@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Text</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+    />
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+            defer
+    ></script>
+
+    <link rel="stylesheet" href="../styles/index.css" />
+</head>
+<body>
+<nav class="navbar justify-content-center nav-pills">
+    <ul class="nav">
+        <li class="nav-item">
+            <a
+                    href="../index.html"
+                    class="text-decoration-none text-black nav-link"
+            >Strona główna</a
+            >
+        </li>
+        <li class="nav-item">
+            <a
+                    href="../Instalacja/index.html"
+                    class="text-decoration-none nav-link"
+            >Instalacja</a
+            >
+        </li>
+        <li class="nav-item">
+            <a
+                    href="../Breakpoints/index.html"
+                    class="text-decoration-none nav-link"
+            >Breakpointy</a
+            >
+        </li>
+        <li class="nav-item">
+            <a href="index.html" class="text-decoration-none nav-link"
+            >Kolory</a
+            >
+        </li>
+        <li class="nav-item dropdown" data-bs-theme="light">
+            <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+            >Tekst</a
+            >
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../Text/index.html">Wielkości tekstu</a></li>
+                <li><a class="dropdown-item" href="../Text/shadows.html">Cienie</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="../Display/index.html" class="text-decoration-none nav-link"
+            >Display</a
+            >
+        </li>
+        <li class="nav-item">
+            <a href="../Spacing/index.html" class="text-decoration-none nav-link">Spacing</a>
+        </li>
+        <li class="nav-item">
+            <a href="../Komponenety/index.html"
+               class="text-decoration-none nav-link">
+                Komponenty</a>
+        </li>
+    </ul>
+</nav>
+<div class="container-fluid w-100 d-flex justify-content-center">
+    <p class="display-1">Wielkości tekstu</p>
+</div>
+<hr />
+<div class="container d-flex justify-content-space-around">
+    <div class="container w-30%">
+        <p class="display-6">
+            Istnieje klasa shadow która po prostu daje ładny cień na kontener ma również warianty small i large
+        </p>
+    </div>
+
+    <div class="container d-flex justify-content-center ">
+        <img class="w-100" src="../images/codeShadow.png" alt="h1" />
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="shadow-none p-3 mb-5  text-white rounded">No shadow</div>
+    <div class="shadow-sm p-3 mb-5 text-white rounded">Small shadow</div>
+    <div class="shadow p-3 mb-5 text-white rounded">Regular shadow</div>
+    <div class="shadow-lg p-3 mb-5 text-white rounded">Larger shadow</div>
+</div>
+</body>
+</html>
