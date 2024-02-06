@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
-    <nav class="navbar justify-content-center nav-pills">
+    <nav
+            class="navbar justify-content-center nav-pills">
       <ul class="nav">
         <li class="nav-item">
           <a
@@ -80,25 +81,24 @@
     </div>
     <hr />
     <div class="container d-flex justify-content-space-around">
-      <div class="container w-40%">
-        <p class="display-6 display-lg-7">
-          W bootstrapie jest 6 wbudowanych breakpointów używanych do tworzenia
-          breakpointów:
-        </p>
-      </div>
-      <div class="container w-60%">
-        <img class="w-100" src="../images/breakpoints.png" alt="breakpointy" />
-      </div>
-    </div>
-    <hr />
-    <div class="container d-flex justify-content-space-around">
       <div class="container">
         <p class="display-6">
           Używając displaya jako klasy przyjmuje on takei same parametry jak w
-          klasycznym CSS np "d-flex". Po wybraniu naszego displaya możemy
+          klasycznym CSS np "d-flex", "d-grid". Po wybraniu naszego displaya
+          możemy
           dopisywać kolejne klasy które określają parametry wybranej opcji
         </p>
       </div>
+    </div>
+    <hr>
+    <div
+            class="container d-flex justify-content-space-around">
+        <p class="display-6">
+          Tak samo jak w zwykłym w cssie, używamy właściwości takich jak:<br>
+          <i>align-items-center</i><br>
+          <i>justify-content-space-around</i><br>
+          <i>align-items-sm-start</i>
+        </p>
     </div>
   </body>
 </html>
