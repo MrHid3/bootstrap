@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body class="text-bg-secondary">
+    <div class="navbar justify-content-center nav-pills text-bg-info">
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#" class="text-decoration-none p-2 mx-2 nav-link active">
+            Link
+          </a>
+        </li>
+        <li class="nav-item dropdown" data-bs-theme="dark">
+          <a
+            href="#"
+            class="dropdown-toggle nav-link text-decoration-none text-bg-success"
+            role="button"
+            data-bs-toggle="dropdown"
+            >Rozwin</a
+          >
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Kocham</a></li>
+            <li><a href="#" class="dropdown-item">Oleńke</a></li>
+            <li><a href="#" class="dropdown-item">&lt;3</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a
+            href="#"
+            class="text-decoration-none p-2 mx-2 nav-link text-bg-success"
+          >
+            Link
+          </a>
+        </li>
+      </ul>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div id="carouselExample" class="carousel slide carousel-dark">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://steamuserimages-a.akamaihd.net/ugc/1844801565386647524/C5B048B65C3FB718F2B9A12ACF5B4332A5D542FA/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+              class="d-block w-100"
+              alt="rc"
+              height="450"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://i.makeagif.com/media/11-08-2023/VS9aUd.gif"
+              class="d-block w-100"
+              alt="rick astley"
+              height="450"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media1.tenor.com/m/HDXIhTFsQDEAAAAC/kayne-west-selfie.gif"
+              class="d-block w-100"
+              alt="kys"
+              height="450"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row">
+        <div
+          class="p-2 border border-danger justify-content-center d-flex text-bg-warning col-8 col-md-4 col-xl-12"
+        >
+          1
+        </div>
+        <div
+          class="p-2 border border-danger justify-content-center d-flex text-bg-warning col-4 col-md-2 col-xl-12"
+        >
+          2
+        </div>
+        <div
+          class="p-2 border border-danger justify-content-center d-flex text-bg-warning col-8 col-md-4 col-xl-12"
+        >
+          3
+        </div>
+        <div
+          class="p-2 border border-danger justify-content-center d-flex text-bg-warning col-4 col-md-2 col-xl-4"
+        >
+          4
+        </div>
+        <div
+          class="p-2 border border-danger justify-content-center d-flex text-bg-warning col-8 col-md-6 col-xl-4"
+        >
+          5
+        </div>
+        <div
+          class="p-2 border border-danger justify-content-center d-flex text-bg-warning col-4 col-md-6 col-xl-4"
+        >
+          6
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="accordion container" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Nie lubię Gabriela
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Gabriel jest powszechnie nielubiany ze względu na swoją małpowatość.
+            Jest głośny, głupi, czarny i można dodać wiele innych przymiotników
+            na jego temat lecz nie będe tracił na to czasu.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Wieliczka lepsza od Bochni
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Wieliczka jest lepsza od bochni pod wieloma względami. Głównym
+            czynnikiem jest brak Bozgiego, dzięki czemu jest cicho i spokojnie w
+            całym mieście. Drugim elementem jest obiektywnie lepsza kopalnia
+            soli.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="border border-light d-flex justify-content-center text-bg-dark col-6 col-sm-3 col-md-6 col-lg-3 col-xxl-2"
+        >
+          1
+        </div>
+        <div
+          class="border border-light d-flex justify-content-center text-bg-dark col-6 col-sm-3 col-md-3 col-lg-3 col-xxl-2"
+        >
+          2
+        </div>
+        <div
+          class="border border-light d-flex justify-content-center text-bg-dark col-6 col-sm-2 col-md-3 col-lg-3 col-xxl-2"
+        >
+          3
+        </div>
+        <div
+          class="border border-light d-flex justify-content-center text-bg-dark col-6 col-sm-2 col-md-4 col-lg-3 col-xxl-2"
+        >
+          4
+        </div>
+        <div
+          class="border border-light d-flex justify-content-center text-bg-dark col-6 col-sm-2 col-md-4 col-lg-6 col-xxl-2"
+        >
+          5
+        </div>
+        <div
+          class="border border-light d-flex justify-content-center text-bg-dark col-6 col-sm-8 col-md-4 col-lg-6 col-xxl-2"
+        >
+          6
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="container d-flex justify-content-space-around mb-5 gap-3">
+      <div class="card w-25">
+        <img
+          src="https://www.ikea.com/pl/pl/images/products/blahaj-pluszak-maly-rekin__0716615_pe730956_s5.jpg"
+          class="card-img-top w-33 h-auto"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">Blahaj</h5>
+          <p class="card-text">Blahaj</p>
+          <a href="#" class="btn btn-primary">Blahaj</a>
+        </div>
+      </div>
+      <div class="card w-25">
+        <img
+          src="https://i.scdn.co/image/ab67706c0000da84614395c20efd99eb269d4b79"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">Ballin</h5>
+          <p class="card-text">
+            I put the new Forgis on the Jeep I trap until the bloody bottoms is
+            underneath 'Cause all my niggas got it out the streets I keep a
+            hundred racks inside my jeans I remember hittin' the mall with the
+            whole team Now a nigga can't answer calls 'cause I'm ballin'
+          </p>
+          <a href="#" class="btn btn-primary">Ballin</a>
+        </div>
+      </div>
+      <div class="card w-25">
+        <img
+          src="https://play-lh.googleusercontent.com/UHJucY_bVsxX6haKhPt0e6Eua4N4MhJGOnrt3laNZXPMYDGUgPtLNISvdlkUvODwu00B"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">Ben</h5>
+          <p class="card-text">Yeeeees</p>
+          <a href="#" class="btn btn-primary">No</a>
+        </div>
+      </div>
+      <div class="card w-25">
+        <img
+          src="https://i.imgflip.com/53mzn5.gif"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">Bee movie</h5>
+          <p class="card-text">Bee movie</p>
+          <a href="#" class="btn btn-primary">Bee</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
