@@ -25,6 +25,38 @@
         <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#popierdoli" data-bs-theme="dark">
             azbestos consumpzione
         </button>
+        <button type="button" class="btn btn-danger mx-2" id="liveToastBtn">
+            No dawaj
+        </button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div
+                    id="liveToast"
+                    class="toast"
+                    role="alert"
+                    aria-live="assertive"
+                    aria-atomic="true"
+            >
+                <div class="toast-header">
+                    <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Andrew_Tate_-_James_Tamim_Upload_%28Cropped_Wide_Portrait%29.png/640px-Andrew_Tate_-_James_Tamim_Upload_%28Cropped_Wide_Portrait%29.png"
+                            width="50"
+                            height="50"
+                            class="rounded me-2"
+                            alt="..."
+                    />
+                    <strong class="me-auto">Skibidi</strong>
+                    <small>69 mins ago</small>
+                    <button
+                            type="button"
+                            class="btn-close btn-secondary"
+                            data-bs-dismiss="toast"
+                            aria-label="Close"
+                    ></button>
+                </div>
+                <div class="toast-body text-bg-secondary">Kocham Oleńke</div>
+            </div>
+        </div>
+        <br />
     </div>
     <div class="modal text-light" tabindex="-1" id="popierdoli" data-bs-theme="dark">
         <div class="modal-dialog">
@@ -130,5 +162,22 @@
             Kocham Oleńkę to nowe lorem ipsum. Chciałbym skorzystać z tej okazji, aby pozdrowić Anię, Karolinę oraz Julcię
         </div>
     </div>
+    <script>
+        const toastTrigger = document.getElementById("liveToastBtn");
+        const toastLiveExample = document.getElementById("liveToast");
+        if (toastTrigger) {
+            toastTrigger.addEventListener("click", () => {
+                const toast = new bootstrap.Toast(toastLiveExample);
+
+                toast.show();
+            });
+        }
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+        );
+        const tooltipList = [...tooltipTriggerList].map(
+            (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
+    </script>
 </body>
 </html>
